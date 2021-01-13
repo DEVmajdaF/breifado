@@ -56,7 +56,7 @@ namespace breifado
         void GetClient()
         {
             //Creation d'une SqlCommand
-            SqlCommand selectCommand = new SqlCommand("SELECT * FROM clientinfo",con);
+            SqlCommand selectCommand = new SqlCommand("SELECT id AS ID ,firstname As 'First Name',lastname As 'Last Name',adress As Address,villeId As [City Id] FROM clientinfo", con);
             adapter.SelectCommand = selectCommand;
             //fill kat3amar la table o kat executer ACCEPTCHANGES()bach katkhali kolchi unchanged
             //adapter.Fill(ds, "clientinfo");
@@ -314,7 +314,7 @@ namespace breifado
         {
             retour.IsEnabled = true;
             string content = boxsearchc.Text;
-            SqlCommand searchcity = new SqlCommand("Select * from clientinfo inner join ville ON clientinfo.villeId= ville.id  Where ville.name= '"+content+"' ", con);
+            SqlCommand searchcity = new SqlCommand("Select c.id as ID ,c.firstname As 'First Name',c.lastname As 'Last Name',c.adress As Address, v.name As City from clientinfo c inner join ville v ON c.villeId= v.id  Where v.name= '"+content+"' ", con);
             con.Open();
            
             SqlDataReader myReader = searchcity.ExecuteReader();

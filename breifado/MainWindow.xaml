@@ -10,6 +10,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
+            
         </Grid.ColumnDefinitions>
         <DataGrid HorizontalAlignment="Left"  CanUserAddRows="False" CanUserDeleteRows="False"  SelectionMode="Single" x:Name="datagrid" Height="270" Margin="291,108,0,0" VerticalAlignment="Top" Width="491" Background="#3E4685" BorderBrush="{x:Null}" Foreground="Black"  AutomationProperties.Name="datagrid" SelectionChanged="datagrid_SelectionChanged_1" MouseDoubleClick="datagrid_MouseDoubleClick" CurrentCellChanged="datagrid_CurrentCellChanged"/>
         <TextBox HorizontalAlignment="Left" Height="21" Margin="43,388,0,0" TextWrapping="Wrap" VerticalAlignment="Top" x:Name="searchbyid" Width="67" TextChanged="searchbyid_TextChanged"/>
