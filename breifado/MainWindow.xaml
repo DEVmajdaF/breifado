@@ -11,7 +11,7 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <DataGrid HorizontalAlignment="Left" SelectionMode="Single" x:Name="datagrid" Height="270" Margin="291,108,0,0" VerticalAlignment="Top" Width="491" Background="#3E4685" BorderBrush="{x:Null}" Foreground="Black"  AutomationProperties.Name="datagrid" SelectionChanged="datagrid_SelectionChanged_1" MouseDoubleClick="datagrid_MouseDoubleClick" CurrentCellChanged="datagrid_CurrentCellChanged"/>
+        <DataGrid HorizontalAlignment="Left"  CanUserAddRows="False" CanUserDeleteRows="False"  SelectionMode="Single" x:Name="datagrid" Height="270" Margin="291,108,0,0" VerticalAlignment="Top" Width="491" Background="#3E4685" BorderBrush="{x:Null}" Foreground="Black"  AutomationProperties.Name="datagrid" SelectionChanged="datagrid_SelectionChanged_1" MouseDoubleClick="datagrid_MouseDoubleClick" CurrentCellChanged="datagrid_CurrentCellChanged"/>
         <TextBox HorizontalAlignment="Left" Height="21" Margin="43,388,0,0" TextWrapping="Wrap" VerticalAlignment="Top" x:Name="searchbyid" Width="67" TextChanged="searchbyid_TextChanged"/>
         <Button Content="Search By ID" HorizontalAlignment="Left" Margin="120,387,0,0" VerticalAlignment="Top" Width="52" Height="22" BorderBrush="{x:Null}" Background="#3E4685" Click="Button_Click" Foreground="White" FontSize="8"/>
         <Label Content="Notre Liste des Clients" HorizontalAlignment="Left" Margin="269,78,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.944,0.187" Width="156" Background="#FF3E4685" Foreground="White" Height="26"/>
